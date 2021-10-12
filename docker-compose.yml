@@ -1,0 +1,61 @@
+version: '3.5'
+
+services:
+  mysql:
+    image: percona:5.5
+    container_name: laravel-example-mysql
+    ports:
+      - "33090:3306/tcp"
+    command: --max_allowed_packet=104857600 --innodb-buffer-pool-size=256M
+    volumes:
+      - ./resources/local-dump.sql:/docker-entrypoint-initdb.d/local-dump.sql:ro
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_USER: laravel-example
+      MYSQL_PASSWORD: bestpass22
+      MYSQL_ROOT_PASSWORD: "fseesfjl23"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+
+  redis:
+    image: redis:alpine
+    container_name: laravel-example-redis
+    ports:
+      - "63810:6379"
+    volumes:
+      - redis:/data
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: laravel-example
+    image: laravel-example:laravel-example
+    container_name: laravel-example
+    hostname: docker-dev-local-om-2
+    depends_on:
+      - mysql
+    ports:
+      - "1022:80"
+    volumes:
+      - .:/app
+      - app-logs:/app/storage/logs
+      - nginx-logs:/var/log/nginx
+      - php-logs:/var/log/php
+    env_file:
+      - docker-compose.env
+
+volumes:
+  #  consul:
+  #    driver: local
+  mysql:
+    driver: local
+  redis:
+    driver: local
+  php-logs:
+    driver: local
+  app-logs:
+    driver: local
+  nginx-logs:
+    driver: local
+  consul:
+    driver: local

@@ -1,0 +1,19 @@
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/service-url: https://127.0.0.1:933
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/service-key: base64:s0iHLc3j85XeAPiwJVN+5UXuKuq0S3UxD5GGU9pjMlE=
+
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/db/host: abr-mysql
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/db/instance: main
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/db/database: abr
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/db/username: root
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/db/password: bestpass
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/db/port: 3306
+
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/queue/driver: sync
+
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/redis/host: abr-redis
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/redis/instance: abr
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/redis/db_number: 0
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/redis/sessions_db: 1
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/redis/rw_timeout: 60
+$SERVICE_REGION$/apps/$SERVICE_NAME$/api/redis/port: 6379
+
