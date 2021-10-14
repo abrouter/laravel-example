@@ -13,7 +13,7 @@ $ docker-compose up -d
 ```
 
 ## Demo
-After local set up you can go to the (http://localhost:1022) and check it out how's it works.
+After local set up you can go to the http://localhost:1022 and check it out how's it works.
 ![Example](/example.png)
 Color of the button will changing every time by the following spread:
 33% - blue
