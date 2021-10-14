@@ -21,4 +21,4 @@ Color of the button will changing every time by the following spread:
 33% - green
 
 ## Ready to use ABRouter on your own project ?
-Let's go on (ABRouter)[https://abrouter.com] and start.
+Let's go on [ABRouter](https://abrouter.com) and start.
