@@ -13,5 +13,8 @@
 
 <button style="background: {{$color}}; padding: 10px; border-radius: 3px; margin-left: 20%;">Hello</button>
 
+<br/>
+<a href="/feature-flags">Check the feature flags <example></example></a>
+
 </body>
 </html>

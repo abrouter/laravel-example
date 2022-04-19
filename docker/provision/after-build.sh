@@ -22,6 +22,8 @@ rm -rf \
 	/usr/lib/php/20131226 \
 	/entypoint.sh
 
+mkdir -p /var/cache/nginx/
+
 find /var/log -type f | while read f; do
 	echo -ne '' > ${f} 2&>1 > /dev/null || true;
 done

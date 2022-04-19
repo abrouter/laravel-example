@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ca19467234211bfa92fb11e708b10d6",
+    "content-hash": "d39cb63feec0301867e7110df5310bb7",
     "packages": [
         {
             "name": "abrouter/abrouter-laravel-bridge",
-            "version": "0.6.0",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/abrouter/abrouter-laravel-bridge.git",
-                "reference": "c6b62f600b6e7a1176644ff9cbadf608ecfd5fa1"
+                "url": "https://github.com/abrouter/laravel-abtest.git",
+                "reference": "9f2c1cb465f28dab5713d0556c2d3eb520e34a2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abrouter/abrouter-laravel-bridge/zipball/c6b62f600b6e7a1176644ff9cbadf608ecfd5fa1",
-                "reference": "c6b62f600b6e7a1176644ff9cbadf608ecfd5fa1",
+                "url": "https://api.github.com/repos/abrouter/laravel-abtest/zipball/9f2c1cb465f28dab5713d0556c2d3eb520e34a2e",
+                "reference": "9f2c1cb465f28dab5713d0556c2d3eb520e34a2e",
                 "shasum": ""
             },
             "require": {
-                "abrouter/abrouter-php-client": "^0.4",
-                "laravel/framework": "^5.6 || ^6.0 || ^7.0 || ^8.0",
+                "abrouter/abrouter-php-client": "^0.7",
+                "laravel/framework": "^5.3 || ^6.0 || ^7.0 || ^8.0",
                 "php": "^5.5 || ^7.0 || ^8.0"
             },
             "type": "library",
@@ -50,30 +50,30 @@
             ],
             "description": "AbrLaravelClient :construction_worker_woman: is a PHP client for laravel to run ab-tests via ABRouter.",
             "support": {
-                "issues": "https://github.com/abrouter/abrouter-laravel-bridge/issues",
-                "source": "https://github.com/abrouter/abrouter-laravel-bridge/tree/0.6.0"
+                "issues": "https://github.com/abrouter/laravel-abtest/issues",
+                "source": "https://github.com/abrouter/laravel-abtest/tree/0.11.0"
             },
-            "time": "2021-10-09T11:19:01+00:00"
+            "time": "2022-04-19T11:44:18+00:00"
         },
         {
             "name": "abrouter/abrouter-php-client",
-            "version": "0.4.0",
+            "version": "0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abrouter/abrouter-php-client.git",
-                "reference": "21983ff27b201e17443876b76f5b212120883baf"
+                "reference": "8d33149e4e546cfdcc6c6be30825bdf07ccd18fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abrouter/abrouter-php-client/zipball/21983ff27b201e17443876b76f5b212120883baf",
-                "reference": "21983ff27b201e17443876b76f5b212120883baf",
+                "url": "https://api.github.com/repos/abrouter/abrouter-php-client/zipball/8d33149e4e546cfdcc6c6be30825bdf07ccd18fe",
+                "reference": "8d33149e4e546cfdcc6c6be30825bdf07ccd18fe",
                 "shasum": ""
             },
             "require": {
                 "art4/json-api-client": "^1.0",
                 "ext-json": "*",
-                "guzzlehttp/guzzle": "^7.0",
-                "php": "^5.5 || ^7.0 || ^8.0"
+                "guzzlehttp/guzzle": "^6.5 || ^7.0",
+                "php": "^7.4 || ^8.0"
             },
             "require-dev": {
                 "php-di/php-di": "^6.0",
@@ -98,9 +98,9 @@
             "description": "AbrPHPClient :construction_worker_woman: is a PHP library to run ab-tests via ABRouter.",
             "support": {
                 "issues": "https://github.com/abrouter/abrouter-php-client/issues",
-                "source": "https://github.com/abrouter/abrouter-php-client/tree/0.4.0"
+                "source": "https://github.com/abrouter/abrouter-php-client/tree/0.7.1"
             },
-            "time": "2021-10-09T11:18:16+00:00"
+            "time": "2022-04-19T12:03:08+00:00"
         },
         {
             "name": "art4/json-api-client",
@@ -8083,8 +8083,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4|^8.0"
+        "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
