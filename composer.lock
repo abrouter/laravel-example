@@ -4,26 +4,74 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d39cb63feec0301867e7110df5310bb7",
+    "content-hash": "30880aa0b0eb2caf247fb899eeee2924",
     "packages": [
         {
-            "name": "abrouter/abrouter-laravel-bridge",
-            "version": "0.11.0",
+            "name": "abrouter/abrouter-php-client",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/abrouter/laravel-abtest.git",
-                "reference": "9f2c1cb465f28dab5713d0556c2d3eb520e34a2e"
+                "url": "https://github.com/abrouter/abrouter-php-client.git",
+                "reference": "72d1b65d768d9eb599e74dd2d805b2afeccd8cee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abrouter/laravel-abtest/zipball/9f2c1cb465f28dab5713d0556c2d3eb520e34a2e",
-                "reference": "9f2c1cb465f28dab5713d0556c2d3eb520e34a2e",
+                "url": "https://api.github.com/repos/abrouter/abrouter-php-client/zipball/72d1b65d768d9eb599e74dd2d805b2afeccd8cee",
+                "reference": "72d1b65d768d9eb599e74dd2d805b2afeccd8cee",
                 "shasum": ""
             },
             "require": {
-                "abrouter/abrouter-php-client": "^0.7",
+                "art4/json-api-client": "^1.0",
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^6.5 || ^7.0",
+                "php": "^7.4 || ^8.0",
+                "predis/predis": "^1.0"
+            },
+            "require-dev": {
+                "php-di/php-di": "^6.0",
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Abrouter\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Yatsenko",
+                    "email": "abrouter@proxiedmail.com"
+                }
+            ],
+            "description": "AbrPHPClient :construction_worker_woman: is a PHP library to run ab-tests via ABRouter.",
+            "support": {
+                "issues": "https://github.com/abrouter/abrouter-php-client/issues",
+                "source": "https://github.com/abrouter/abrouter-php-client/tree/0.10.0"
+            },
+            "time": "2022-06-10T21:08:06+00:00"
+        },
+        {
+            "name": "abrouter/laravel-abtest",
+            "version": "dev-parallel-running",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/abrouter/laravel-abtest.git",
+                "reference": "13419473190b6398a53f4d02b02bacc584bfbc76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/abrouter/laravel-abtest/zipball/13419473190b6398a53f4d02b02bacc584bfbc76",
+                "reference": "13419473190b6398a53f4d02b02bacc584bfbc76",
+                "shasum": ""
+            },
+            "require": {
+                "abrouter/abrouter-php-client": "^0.10",
                 "laravel/framework": "^5.3 || ^6.0 || ^7.0 || ^8.0",
-                "php": "^5.5 || ^7.0 || ^8.0"
+                "php": "^7.4 || ^8.0"
             },
             "type": "library",
             "extra": {
@@ -51,56 +99,9 @@
             "description": "AbrLaravelClient :construction_worker_woman: is a PHP client for laravel to run ab-tests via ABRouter.",
             "support": {
                 "issues": "https://github.com/abrouter/laravel-abtest/issues",
-                "source": "https://github.com/abrouter/laravel-abtest/tree/0.11.0"
+                "source": "https://github.com/abrouter/laravel-abtest/tree/parallel-running"
             },
-            "time": "2022-04-19T11:44:18+00:00"
-        },
-        {
-            "name": "abrouter/abrouter-php-client",
-            "version": "0.7.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/abrouter/abrouter-php-client.git",
-                "reference": "8d33149e4e546cfdcc6c6be30825bdf07ccd18fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/abrouter/abrouter-php-client/zipball/8d33149e4e546cfdcc6c6be30825bdf07ccd18fe",
-                "reference": "8d33149e4e546cfdcc6c6be30825bdf07ccd18fe",
-                "shasum": ""
-            },
-            "require": {
-                "art4/json-api-client": "^1.0",
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.5 || ^7.0",
-                "php": "^7.4 || ^8.0"
-            },
-            "require-dev": {
-                "php-di/php-di": "^6.0",
-                "phpunit/phpunit": "^9"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Abrouter\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Alex Yatsenko",
-                    "email": "abrouter@proxiedmail.com"
-                }
-            ],
-            "description": "AbrPHPClient :construction_worker_woman: is a PHP library to run ab-tests via ABRouter.",
-            "support": {
-                "issues": "https://github.com/abrouter/abrouter-php-client/issues",
-                "source": "https://github.com/abrouter/abrouter-php-client/tree/0.7.1"
-            },
-            "time": "2022-04-19T12:03:08+00:00"
+            "time": "2022-06-10T23:04:19+00:00"
         },
         {
             "name": "art4/json-api-client",
@@ -2326,6 +2327,72 @@
                 }
             ],
             "time": "2021-08-28T21:27:29+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/predis/predis.git",
+                "reference": "a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/predis/predis/zipball/a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e",
+                "reference": "a2fb02d738bedadcffdbb07efa3a5e7bd57f8d6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net",
+                    "role": "Creator & Maintainer"
+                },
+                {
+                    "name": "Till Krüss",
+                    "homepage": "https://till.im",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/predis/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "support": {
+                "issues": "https://github.com/predis/predis/issues",
+                "source": "https://github.com/predis/predis/tree/v1.1.10"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/tillkruss",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-01-05T17:46:08+00:00"
         },
         {
             "name": "psr/container",
@@ -8079,12 +8146,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "abrouter/laravel-abtest": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
