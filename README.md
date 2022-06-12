@@ -8,6 +8,7 @@ Then, run the following commands:
 
 ``` bash
 $ git clone https://github.com/abrouter/laravel-example.git
+$ cp .env.dist .env
 $ composer install
 $ docker-compose up -d
 ```

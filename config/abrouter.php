@@ -1,7 +1,15 @@
 <?php
 declare(strict_types = 1);
 
+use Abrouter\LaravelClient\Bridge\KvStorage;
+use Abrouter\LaravelClient\Bridge\ParallelRunning\TaskManager;
+
 return [
-    'token' => '0ea94e3527644b8e6259b790d866223490f3c91634bbfd0eb978b4a57a4d835d57ab5195f892b15d',
+    'token' => 'add73bda37106bbddf2e6b3f61c6ed197c2250e99df9474ad01b9afb2035af33cf66c292fdf6a6e8',
     'host' => 'https://abrouter.com',
+    'kvStorage' => KvStorage::class,
+    'parallelRunning' => [
+        'enabled' => true,
+        'taskManager' => TaskManager::class,
+    ],
 ];
