@@ -21,6 +21,7 @@ class ExampleController
 
             return view('button', [
                 'color' => $buttonColor->getBranchId(),
+                'parallelRunning' => config('abrouter.parallelRunning.enabled') === true,
             ]);
         } catch (\Exception $e) {
             die(var_dump($e->getMessage()));

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30880aa0b0eb2caf247fb899eeee2924",
+    "content-hash": "ceb1afaca5ed856dbe8f31948211ee01",
     "packages": [
         {
             "name": "abrouter/abrouter-php-client",
@@ -56,16 +56,16 @@
         },
         {
             "name": "abrouter/laravel-abtest",
-            "version": "dev-parallel-running",
+            "version": "0.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/abrouter/laravel-abtest.git",
-                "reference": "3a2ed65fd8f96cc46d379a9b68ce600b09048349"
+                "reference": "b82f8b7cea2d746ed3be148fa01dc6f6b826a151"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/abrouter/laravel-abtest/zipball/3a2ed65fd8f96cc46d379a9b68ce600b09048349",
-                "reference": "3a2ed65fd8f96cc46d379a9b68ce600b09048349",
+                "url": "https://api.github.com/repos/abrouter/laravel-abtest/zipball/b82f8b7cea2d746ed3be148fa01dc6f6b826a151",
+                "reference": "b82f8b7cea2d746ed3be148fa01dc6f6b826a151",
                 "shasum": ""
             },
             "require": {
@@ -99,9 +99,9 @@
             "description": "AbrLaravelClient :construction_worker_woman: is a PHP client for laravel to run ab-tests via ABRouter.",
             "support": {
                 "issues": "https://github.com/abrouter/laravel-abtest/issues",
-                "source": "https://github.com/abrouter/laravel-abtest/tree/parallel-running"
+                "source": "https://github.com/abrouter/laravel-abtest/tree/0.13.0"
             },
-            "time": "2022-06-12T18:59:01+00:00"
+            "time": "2022-06-12T21:33:07+00:00"
         },
         {
             "name": "art4/json-api-client",
@@ -8106,9 +8106,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "abrouter/laravel-abtest": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
