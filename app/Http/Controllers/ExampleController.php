@@ -11,7 +11,7 @@ class ExampleController
     public function __invoke(Client $client)
     {
         try {
-            $userId = uniqid();
+            $userId = $_SESSION['userId'] ?? uniqid(); // $_SESSION['guestId'] here's for example. Always use some user id / guest id when sending event
             $buttonColor = $client->experiments()->run($userId, 'button_color');
             $client->statistics()->sendEvent(new EventDTO(
                 null,
